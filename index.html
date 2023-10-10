@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Playfair+Display+SC&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container ativo" id="container">
+    <div class="container2 red" id="container2">
+      <div class="containerHora" id="containerHora"></div>
+      <div class="containerMin" id="containerMin"></div>
+      <div class="containerSec" id="containerSec"></div>
+    </div>
+
+    <div class="controles" id="controles">
+      <button class="btn ativo" id="btnCronometer">Cronometer</button>
+      <button class="btn ativo" id="btnAlarm">Alarm</button>
+      <button class="btn ativo" id="btnVisor">Visor</button>
+    </div>
+
+    <div class="alarm" id="alarm">
+      <form class="form-alarm" id="form-alarm">
+        <label for="hour-alarm" name="hour-alarm"></label>
+        <input type="number" id="hour-alarm" name="hour-alarm" placeholder="Hora" tabindex="1">
+        <label for="min-alarm" name="min-alarm"></label>
+        <input type="number" id="min-alarm" name="min-alarm" placeholder="Min" tabindex="2">
+      </form>
+    </div>
+
+  </div>
+
+  <div class="containerCronometer" id="containerCronometer">
+    <div class="containerCronometer2 red" id="containerCronometer2">
+      <div class="cronometerHours" id="cronometerHours"></div>
+      <div class="cronometerMin" id="cronometerMin"></div>
+      <div class="cronometerSec" id="cronometerSec"></div>
+      <div class="cronometerMS" id="cronometerMS"></div>
+    </div>
+
+    <div class="controles2" id="controles2">
+      <button class="btn" id="btnClock">Clock</button>
+      <button class="btn" id="btnPlay" disabled>&#9654</button>
+      <button class="btn" id="btnClear">&#x23F9 </button>
+      <button class="btn" id="btnPause">&#x23F8 </button>
+    </div>
+
+  </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,249 @@
+.container {
+  display: none;
+}
+
+.container.ativo {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  background: #2F4F4F;
+  padding: 15px;
+  border: 1px solid black;
+  max-width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  animation: switch .3s forwards;
+}
+
+.container2 {
+  padding: 5px 5px 5px 5px;
+  max-width: 100%;
+  background: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.container2.red {
+  font-family: 'Orbitron', sans-serif;
+  color: red;
+}
+
+.container2.yellow {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFD700;
+}
+
+.container2.white {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFF0;
+}
+
+.containerHora {
+  max-width: 50vw;
+  background: black;
+  font-size: 300%;
+  text-align: right;
+}
+
+.containerMin {
+  max-width: 50vw;
+  background: black;
+  font-size: 300%;
+  text-align: center;
+}
+
+.containerSec {
+  max-width: 50vw;
+  background: black;
+  font-size: 300%;
+  text-align: left;
+}
+
+.containerCronometer {
+  display: none;
+}
+
+.containerCronometer.ativo {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  background: #2F4F4F;
+  padding: 15px;
+  border: 1px solid black;
+  max-width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  animation: switch .3s forwards;
+}
+
+.containerCronometer2 {
+  padding: 5px 5px 5px 5px;
+  max-width: 100%;
+  background: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px
+}
+
+.containerCronometer2.red {
+  font-family: 'Orbitron', sans-serif;
+  color: red;
+}
+
+.containerCronometer2.yellow {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFD700;
+}
+
+.containerCronometer2.white {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFF0;
+}
+
+@keyframes switch {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes switch2 {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.cronometerHours {
+  position: relative;
+  max-width: 50vw;
+  background: black;
+  font-size: 550%;
+  text-align: right;
+}
+
+.cronometerMin {
+  position: relative;
+  padding-top: 6%;
+  max-width: 50vw;
+  background: black;
+  font-size: 400%;
+  text-align: center;
+}
+
+.cronometerSec {
+  position: relative;
+  padding-top: 10%;
+  max-width: 50vw;
+  background: black;
+  font-size: 300%;
+  text-align: right;
+}
+
+.cronometerMS {
+  position: relative;
+  max-width: 50vw;
+  padding-top: 14%;
+  background: black;
+  font-size: 200%;
+  text-align: right;
+}
+
+.btn {
+  display: none;
+}
+
+.btn.ativo {
+  display: block;
+}
+
+.controles {
+  width: 100%;
+  direction: flex;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.controles2 {
+  width: 100%;
+  direction: flex;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn.ativo {
+  background-color: #A9A9A9;
+  border: 1px solid rgba(54, 54, 54, 0.6);
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+}
+
+.alarm {
+  display: none;
+
+}
+
+.alarm.ativo {
+  max-width: 50%;
+  display: flex !important;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  animation: switch2 0.3s forwards;
+}
+
+#hour-alarm {
+  width: 8rem;
+  height: 4rem;
+  background: white;
+  border-radius: 10px;
+  font-size: 200%;
+}
+
+#min-alarm {
+  width: 8rem;
+  height: 4rem;
+  background: white;
+  border-radius: 10px;
+  font-size: 200%;
+}
